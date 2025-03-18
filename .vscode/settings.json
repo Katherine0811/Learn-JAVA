@@ -1,0 +1,8 @@
+{
+    "workbench.editor.limit.enabled": true,
+    "workbench.colorCustomizations": {
+
+    },
+    "editor.wordWrap": "on",
+    "java.debug.settings.onBuildFailureProceed": true
+}

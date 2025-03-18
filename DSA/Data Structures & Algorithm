@@ -1,0 +1,80 @@
+Data Structure:
+A named location that can be used to store and organize data.
+Example: Array, Family Tree
+
+Algorithms:
+A collection of steps to solve a problem.
+Example: Linear Search
+
+Goal:
+1. To write codes that are efficient for both time and memory.
+2. Frequently asked in job interview questions.
+
+
+Big O Notation:
+1. Describes the performance of an algorithm as the amount of data increases
+2. Machine independent (# of steps to completion)
+3. Ignore smaller operations: O(n + 1) --> O(n)
+Example: O(1), O(n), O(log n), O(n ^ 2)
+
+Compare O(n) Linear time with O(1) Constant time:
+
+Linear Time: O(n)
+
+        int addUp(int n) {
+            int sum = 0;
+            for (int i = 0; i <= n; i++) {
+                sum += i;
+            }
+            return sum;
+        }
+        <!-- n steps (Code slows as data grows) -->
+
+Constant time: O(1)
+
+        int addUp(int n) {
+            int sum = n * (n + 1) / 2;
+            return sum;
+        }
+        <!-- 3 steps (Constant as data grows) -->
+
+Types of Big O Notation:
+** Examples are arranged from best to worst order.
+
+1.  O(1) = Constant Time
+    >> Random access of an element in an array
+    >> Inserting at the beginning of linkedList
+
+2.  O(log n) = Logarithmic Time
+    >> Binary Search
+
+3.  O(n) = Linear Time
+    >> Looping through elements in an array
+    >> Searching through a linkedList
+    >> Linear Search, Interpolation Search
+
+4.  O(n log n) = Quasilinear Time
+    >> QuickSort
+    >> MergeSort
+    >> HeapSort
+
+5. O(n ^ 2) Quadratic Time
+    >> Insertion Sort
+    >> Selection Sort
+    >> BubbleSort
+
+6.  O(n !) = Factorial Time
+    >> Traveling Salesman Problem
+
+Breadth First Search
+1.  Traverse a graph level by level
+2.  Utilizes a Queue
+3.  Better if destination is on average close to start
+4.  Siblings are visited before children
+
+Depth First Search
+1.  Traverse a graph branch by branch
+2.  Utilizes a Stack
+3.  Better if destination is on average far from the start
+4.  Children are visited before siblings
+5.  More popular for games / puzzles
